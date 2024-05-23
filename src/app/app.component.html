@@ -1,0 +1,67 @@
+<p>
+    <mat-toolbar style="background-color: #a0d6f6;">
+      <span><img src="../assets/img/logo.png" width="40%" height="50%"></span>
+      <span class="example-spacer"></span>
+      <div class="notifi-item" (click)="toggleRoommates()" *ngIf="roommates">
+        <img src="../assets/img/student.png" alt="Student Image">
+      </div>
+      <div class="notifi-item" (click)="toggleRoommates()" *ngIf="!roommates">
+        <img src="../assets/img/landlord1.png" alt="Landlord Image">
+      </div>
+      
+      
+      <span class="offset-7">
+        <button mat-icon-button aria-label="Example icon button with a home icon" [matMenuTriggerFor]="menu">
+          <mat-icon matBadge="1" matBadgeColor="warn">notifications</mat-icon>
+        </button>
+        
+        <mat-menu style="width: 300px; height: 400px; background: #FCFCFC; border-radius: 49.09px; border: 5px solid #88CFF1;" #menu="matMenu">
+          <div class="notifi-item" >
+            <img src="../assets/img/avatar1.png" alt="img">
+            <div class="text">
+              <h4>Elias Abdurrahman</h4>
+              <p>I am interested in this rental and would like to schedule a viewing. what the hell is hapening</p>
+            </div>
+            </div>
+            <div class="row">
+              <button type ="button" routerLink="notif"  class="btn btn-primary offset-4 col-3" >View
+  </button>
+            </div>
+        </mat-menu>
+        
+        
+        
+        
+        
+      <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      </span>
+    </mat-toolbar>
+  </p>
+  
+  
+  <mat-drawer-container class="full-height">
+    <mat-drawer #drawer opened="false" mode="side" position="end">
+    <mat-nav-list>
+        <mat-list-item>
+            <button routerLink="card" mat-button><mat-icon>person</mat-icon>My Account</button>
+        </mat-list-item>
+        <mat-list-item *ngIf="home">
+            <button routerLink="" mat-button><mat-icon>home</mat-icon> Home</button>
+        </mat-list-item>
+        <mat-list-item *ngIf="roommates">
+            <button routerLink="roommates" (click)="showDetails()" mat-button><mat-icon>group_add</mat-icon>Add Roomates</button>
+        </mat-list-item>
+        <mat-list-item *ngIf="!roommates">
+            <button (click)="redirectToAnotherPath()" routerLink="list" mat-button><mat-icon>add</mat-icon>List House</button>
+        </mat-list-item>
+    </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+ 
+ 
+

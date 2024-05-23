@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 96vh;
+    background: url('D:/coding/code/StuDar/src/assets/img/house.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#list{
+    width: 100%; 
+    height: 100%; 
+    text-align: center; 
+    color: #103d57; 
+    font-size: 90px; 
+    font-family: Outfit; 
+    font-weight: 700; 
+    line-height: 90px; 
+    letter-spacing: 6.30px; 
+    word-wrap: break-word ;
+    }
+#bt{
+    color: rgba(102, 102, 102, 0.80); 
+    font-size: 15px; 
+    font-family: Outfit; 
+    font-weight: 700; 
+    letter-spacing: 2.50px; 
+    word-wrap: break-word ;
+}
+button{
+       width: 100%;
+       background: #196d8f;
+       font-size: 16px; 
+      
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items vertically and horizontally */
+    width: 700px;
+    
+    max-width: 90%; /* Change to maximum width for responsiveness */
+    margin: 0 auto; /* Center the wrapper horizontally */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Improved box shadow */
+    background: rgba(255, 255, 255, 0.8); /* Adjusted background color */
+    border-radius: 20px; /* Slightly reduced border radius */
+    overflow: hidden;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add spacing between elements */
+}
+
+button {
+    width: 300px; /* Adjust button width */
+    height: 60px; /* Adjust button height */
+    background: #196d8f;
+    font-size: 16px;
+    color: #ffffff; /* Change text color to improve visibility */
+    border: none; /* Remove default button border */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+}
+
+button:hover {
+    background-color: #135366; /* Darken button color on hover */
+}
+
+
+

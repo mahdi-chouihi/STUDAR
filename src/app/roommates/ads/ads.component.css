@@ -1,0 +1,115 @@
+.profile-card {
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
+    background: #fff;
+    border-radius: 12px;
+    max-width: 700px;
+    position: relative;
+  }
+  
+  .profile-card__img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0px 5px 50px 0px rgb(66, 172, 191), 0px 0px 0px 7px rgba(68, 177, 235, 0.743);
+  }
+  
+  .profile-card__img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .profile-card__cnt {
+    margin-top: -35px;
+    text-align: center;
+    padding: 0 20px;
+    padding-bottom: 40px;
+    transition: all .3s;
+  }
+  
+  .profile-card__name {
+    font-weight: 700;
+    font-size: 24px;
+    color: #16084f;
+    margin-bottom: 15px;
+  }
+  .social-media-icon{
+    width: 40px;
+  }
+  .phone-number {
+    display: none;
+    position: absolute;
+  }
+  
+  .img-container:hover .phone-number {
+    display: block;
+  }
+  
+  .img-container:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 1140.00px) {
+    .bigtext {
+        font-size: 20px;
+    }
+    .bigtext2
+    {
+        font-size: 20px;
+    }
+    .delete {
+       
+        font-size: 10px;
+    }
+    .img{
+        width: 40px;
+    }
+    .card-p
+    {
+        font-size: 15px;
+    }
+    .profile-card-inf__txt
+    {
+      font-size: smaller;
+    }
+    .profile-card__img{
+      width: 85px;
+      height: 85px;
+    }
+    .profile-card__name {
+      font-size: 20px;
+      
+    }
+}
+@media (max-width: 710.00px) {
+    .img {
+        width: 25px;
+    }
+    .bigtext {
+        font-size: 15px;
+    }
+    .bigtext2{
+        font-size: 15px;
+    }
+    .card-p{
+      font-size: 12px
+    }
+    .profile-card__img{
+      width: 70px;
+      height: 70px;
+    }
+    .profile-card__name {
+      font-size: 18px;
+      
+    }
+}
+  

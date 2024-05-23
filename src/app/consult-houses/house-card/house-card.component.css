@@ -1,0 +1,58 @@
+.card{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+     
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 220px; /* Adjust this value as needed */
+}
+
+
+/* Custom CSS for carousel indicators */
+.custom-indicators .carousel-indicators {
+    display: none; /* Hide indicators by default */
+}
+/* Display indicators when hovering over the carousel container */
+.card:hover .custom-indicators .carousel-indicators {
+    display: flex !important;
+}
+.custom-indicators .carousel-indicators button {
+    background-color: black !important; /* Set background color */
+    width: 10px; /* Set width */
+    height: 10px; /* Set height */
+    border-radius: 50%; /* Make it a circle */
+    border: none; /* Remove border */
+    margin: 0 5px; /* Add some space between indicators */
+}
+.custom-indicators .carousel-indicators .active {
+    background-color: white !important; /* Set active indicator color */
+}
+
+
+
+
+a.in {
+    color: black; /* Set the default color to black */
+    text-decoration: none; /* Remove underline by default */
+}
+
+a.in:hover {
+    text-decoration: underline; /* Add underline when hovered on */
+}
+@media (max-width: 575.50px)
+{
+    .search{
+        margin-top: 0.35cm;
+    }
+}
+@media (max-width: 768px) {
+    .card{
+        margin-top: 0.8cm;
+    }
+}

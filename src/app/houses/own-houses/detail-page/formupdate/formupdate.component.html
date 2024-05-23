@@ -1,0 +1,131 @@
+<div class="card">
+  <form action="">
+  <div class="container" id="con1">
+      <br>
+      <br>
+      
+      <div class="row">
+        <div class="col-4 offset-2">
+            
+                <h1 class="outfit">listing information :</h1>
+                <br>
+                <div class="form-group mt-3" >
+
+               
+               <div class="form-group mt-3">
+                <label for="monthly" class="form-label outfit"><h4>Monthly rent</h4></label>
+                <input type="number" min="0" max="2000" class="form-control form-control-lg" id="monthly" [(ngModel)]="monthly_rent"   name="monthly_rent" placeholder="TND" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="deposit" class="form-label outfit"><h4>Security deposit</h4></label>
+                <input type="number" min="0" max="2000" class="form-control form-control-lg" id="deposit" [(ngModel)]="security_deposit"  name="security_deposit" placeholder="TND" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="offset-2 col-3 ">
+              <div class="form-group mt-3">
+                <label for="bedrooms" class="form-label outfit"><h4>Bedrooms</h4></label>
+                <input type="number" max="10" min="0" class="form-control form-control-lg" id="bedrooms" name="bedrooms" [(ngModel)]="bedrooms" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-3 offset-2 mt-3">
+              <h4 class="outfit">Gender</h4>
+            </div>
+          </div>
+          <div class="form-check form-check-inline offset-2">
+            <input class="form-check-input" type="radio" id="female" value="Female" name="gender" [(ngModel)]="gender">
+            <label class="form-check-label" for="female">female</label>
+          </div>
+          <div class="form-check form-check-inline offset-2">
+            <input class="form-check-input" type="radio" id="male" value="Male" name="gender" [(ngModel)]="gender">
+            <label class="form-check-label" for="male">male</label>
+          </div>
+          <div class="form-check form-check-inline offset-2">
+            <input class="form-check-input" type="radio" id="both" value="Both" name="gender" [(ngModel)]="gender">
+            <label class="form-check-label" for="both">both</label>
+          </div>
+          
+      
+      <div class="row">
+        <div class="col-4 offset-2">
+            
+              <div class="form-group mt-3">
+                <label for="available" class="form-label outfit"><h4>date available</h4></label>
+                <input type="date" class="form-control form-control-lg" id="available"  name="date_available" [(ngModel)]="date_available"required>
+              </div>
+            </div>
+        
+    </div>
+    <div class="row">
+      <div class="col col-3 offset-2 mt-3">
+    <h4 class="outfit">Amenities</h4>
+    </div>
+  </div>
+    
+  <div class="form-check offset-2">
+    <input class="form-check-input" type="checkbox" id="op1" [(ngModel)]="isCheckedAC" (change)="updateValueAC()" [checked]="item.a_c == 1">
+    <label class="form-check-label outfit" for="op1">
+      A/C
+    </label>
+</div>
+
+<div class="form-check offset-2">
+    <input class="form-check-input" type="checkbox" id="op2" [(ngModel)]="isCheckedf" (change)="updateValuef()" [checked]="item.furnished == 1">
+    <label class="form-check-label outfit" for="op2">
+      Furnished
+    </label>
+</div>
+
+<div class="form-check offset-2">
+    <input class="form-check-input" type="checkbox" id="op3" [(ngModel)]="isCheckedb" (change)="updateValueb()" [checked]="item.balcony == 1">
+    <label class="form-check-label outfit" for="op3">
+      Balcony or deck
+    </label>
+</div>
+
+<div class="form-check offset-2">
+    <input class="form-check-input" type="checkbox" id="op4" [(ngModel)]="isCheckedw" (change)="updateValuew()" [checked]="item.wifi == 1">
+    <label class="form-check-label outfit" for="op4">
+      Wifi
+    </label>
+</div>
+
+<div class="form-check offset-2">
+    <input class="form-check-input" type="checkbox" id="op5" [(ngModel)]="isCheckede" (change)="updateValuee()" [checked]="item.waterelect == 1">
+    <label class="form-check-label outfit" for="op5">
+      Water and electricity included
+    </label>
+</div>
+
+
+   <br>
+
+  <div class="row">
+      <div class="col-4 offset-2">
+        <h4 class="outfit mt-3">Notes(optional)</h4>
+        <textarea cols="30" rows="10" mt-3 class=" form-control" name="note" placeholder="enter additional information" [(ngModel)]="note"></textarea>
+      </div>
+    
+</div>
+      <div class="row">
+        <div class="offset-6 col-5 mt-5">
+         <a routerLink=".." (click)="updateHouse()"> <input type="submit"  class="btn btn-info btn-lg btn-blocck rounded-pill" value="update listing" id="button">
+         </a>
+          <br>
+        </div>
+    </div>
+      
+
+
+      
+  </div>
+  </div>
+  
+  </form>
+</div>   
+

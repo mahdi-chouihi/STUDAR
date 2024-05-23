@@ -1,0 +1,178 @@
+<div class="row">
+    <!--gender filter-->
+    <div class="col-md-2 col-1">
+        <div class="col  d-none d-lg-inline"><!--appear all at large-->
+            <div class="filters" style="  width: 100%; height: 100%; background: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px">
+                <div class="input-group">
+                  <span class="input-group-text"  style="background-color: #E9E9ED; border-color: #E9E9ED;">
+                      <i class="fas fa-venus-mars"></i>
+                  </span>
+                  <mat-form-field style=" margin-left: -0.6cm; margin-top: 0.2cm; margin-bottom: -0.4cm; width: 79%;"  appearance="outline" >
+                    <mat-label style="color: black;" >Gender</mat-label>
+                    <mat-select [(ngModel)]="selectedGender" >
+                      <mat-option>None</mat-option>
+                      <mat-option value="option1">Male</mat-option>
+                      <mat-option value="option2">Female</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+                  </div>
+    </div>
+    <div class="col d-lg-none"><!--appear only icon at small-->
+        <div ngbDropdown class="btn-group" #dropdown="ngbDropdown">
+            <span class="input-group-text" style="background-color: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px;">
+              <i class="fas fa-venus-mars"></i>
+              <button style="background-color: #E9E9ED; border-color: transparent;" id="dropdownBasic1" ngbDropdownToggle (click)="dropdown.open()">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+            </span>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="background-color: #E9E9ED; ">
+              <mat-form-field style=" margin-top: 0.2cm; margin-bottom: -0.5cm; width: 75%;"  appearance="outline" >
+                <mat-label style="color: black;" >Gender</mat-label>
+                <mat-select [(ngModel)]="selectedGender" >
+                  <mat-option>None</mat-option>
+                  <mat-option value="option1">Male</mat-option>
+                  <mat-option value="option2">Female</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--university filter-->
+    <div class="col-md-2 offset-1 offset-md-0 col-1">
+        <div class="col d-none d-lg-inline"><!--appear all at large-->
+            <div style="width: 100%; height: 100%; background: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px">
+                <div class="input-group">
+                    <span class="input-group-text"  style="background-color: #E9E9ED; border-color: #E9E9ED;">
+                        <i class="fas fa-university"></i>
+                    </span>
+                    <mat-form-field style="margin-left: -0.6cm; margin-top: 0.2cm; margin-bottom: -0.5cm; width: 83%;"  appearance="outline" >
+                      <mat-label style="color: black;" >University</mat-label>
+                      <mat-select [(ngModel)]="selectedUni" >
+                        <mat-option>None</mat-option>
+                        <mat-option value="option1">uni1</mat-option>
+                        <mat-option value="option2">uni2</mat-option>
+                        <mat-option value="option3">Option 3</mat-option>
+                      </mat-select>
+                    </mat-form-field>
+              </div>
+            </div>
+        </div>
+            <div class="col d-lg-none"><!--appear only icon at small-->
+                <div ngbDropdown class="btn-group" #dropdown1="ngbDropdown">
+                    <span class="input-group-text" style="background-color: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px;">
+                      <i class="fas fa-university"></i>
+                      <button style="background-color: #E9E9ED; border-color: transparent;" id="dropdownBasic1" ngbDropdownToggle (click)="dropdown1.open()">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                    </span>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="background-color: #E9E9ED; ">
+                      <mat-form-field style=" margin-top: 0.2cm; margin-bottom: -0.5cm; width: 75%;"  appearance="outline" >
+                        <mat-label style="color: black;" >University</mat-label>
+                        <mat-select [(ngModel)]="selectedUni" >
+                          <mat-option>None</mat-option>
+                          <mat-option value="option1">uni1</mat-option>
+                          <mat-option value="option2">uni2</mat-option>
+                          <mat-option value="option3">Option 3</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--city filter-->
+    <div class="col-md-2 offset-1 offset-md-0 col-1">
+        <div class="col d-none d-lg-inline"><!--appear all at large-->
+        <div style="width: 100%; height: 100%; background: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px">
+            <div class="input-group">
+                <span class="input-group-text"  style="background-color: #E9E9ED; border-color: #E9E9ED;">
+                    <i class="fas fa-city"></i>
+                </span>
+                <mat-form-field style="margin-left: -0.6cm; margin-top: 0.2cm; margin-bottom: -0.5cm; width: 79%;"  appearance="outline" >
+                  <mat-label style="color: black;" >City</mat-label>
+                  <mat-select [(ngModel)]="selectedCity" >
+                    <mat-option>None</mat-option>
+                    <mat-option value="option1">uni1</mat-option>
+                    <mat-option value="option2">Option 2</mat-option>
+                    <mat-option value="option3">Option 3</mat-option>
+                  </mat-select>
+                </mat-form-field>
+          </div>
+            </div>
+        </div>
+            <div class="col d-lg-none"><!--appear only icon at small-->
+                <div ngbDropdown class="btn-group" #dropdown2="ngbDropdown">
+                    <span class="input-group-text" style="background-color: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px;">
+                      <i class="fas fa-city"></i>
+                      <button style="background-color: #E9E9ED; border-color: transparent;" id="dropdownBasic1" ngbDropdownToggle (click)="dropdown2.open()">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                    </span>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="background-color: #E9E9ED; ">
+                      <mat-form-field style=" margin-top: 0.2cm; margin-bottom: -0.5cm; width: 75%;"  appearance="outline" >
+                        <mat-label style="color: black;" >City</mat-label>
+                        <mat-select [(ngModel)]="selectedCity" >
+                          <mat-option>None</mat-option>
+                          <mat-option value="option1">uni1</mat-option>
+                          <mat-option value="option2">Option 2</mat-option>
+                          <mat-option value="option3">Option 3</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <!--study level filter-->
+    <div class="col-md-2 offset-1 offset-md-0 col-1"> 
+        <div class="col d-none d-lg-inline"><!--appear all at large-->
+        <div style="width: 100%; height: 100%; background: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px">
+            <div class="input-group">
+                <span class="input-group-text"  style="background-color: #E9E9ED; border-color: #E9E9ED;">
+                    <i class="fas fa-cube"></i>
+                </span>
+                <mat-form-field style="margin-left: -0.6cm; margin-top: 0.2cm; margin-bottom: -0.4cm; width: 83%;"  appearance="outline" >
+                  <mat-label style="color: black;" >Study Level</mat-label>
+                  <mat-select [(ngModel)]="selectedLvl" >
+                    <mat-option>None</mat-option>
+                    <mat-option value="option1">1</mat-option>
+                    <mat-option value="option2">2</mat-option>
+                    <mat-option value="option3">3</mat-option>
+                    <mat-option value="option3">4</mat-option>
+                  </mat-select>
+                </mat-form-field>
+          </div>
+            </div>
+        </div>
+            <div class="col d-lg-none"> <!--appear only icon at small-->
+                <div ngbDropdown class="btn-group" #dropdown3="ngbDropdown">
+                    <span class="input-group-text" style="background-color: #E9E9ED; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px;">
+                      <i class="fas fa-cube"></i>
+                      <button style="background-color: #E9E9ED; border-color: transparent;" id="dropdownBasic1" ngbDropdownToggle (click)="dropdown3.open()">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                    </span>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="background-color: #E9E9ED; width: 5cm;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px">
+                      <mat-form-field style=" margin-top: 0.2cm; margin-bottom: -0.4cm; width: 75%;"  appearance="outline" >
+                        <mat-label style="color: black;" >Study Level</mat-label>
+                        <mat-select [(ngModel)]="selectedLvl" >
+                          <mat-option>None</mat-option>
+                          <mat-option value="option1">1</mat-option>
+                          <mat-option value="option2">2</mat-option>
+                          <mat-option value="option3">3</mat-option>
+                          <mat-option value="option3">4</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                  </div>
+                  </div>
+                </div>
+            </div>
+              <div class="col-2 offset-1 offset-md-0 col-1"><button class="search button">
+                <span>
+                  <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M9.145 18.29c-5.042 0-9.145-4.102-9.145-9.145s4.103-9.145 9.145-9.145 9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321 0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"></path></svg>
+                </span>
+              </button></div> <!--appear search icon at small-->
+  
+
+</div>

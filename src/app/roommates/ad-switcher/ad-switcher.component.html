@@ -1,0 +1,8 @@
+
+    <ng-container *ngIf="showAd; else noAd">
+      <havead></havead>
+    </ng-container>
+    <ng-template #noAd>
+      <donthavead></donthavead>
+    </ng-template>
+    <button (click)="toggleAd()">Switch</button>

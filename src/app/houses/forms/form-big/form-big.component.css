@@ -1,0 +1,45 @@
+
+
+
+
+body{
+    background-color: blue;
+    border: 0cap;
+}
+#con1{
+    background-color: white;
+}
+#button{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  .input {
+    max-width: 190px;
+    display: none;
+  }
+  .labelFile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 420px;
+    height: 190px;
+    border: 2px dashed #ccc;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: #404040;
+    cursor: pointer;
+  }
+  

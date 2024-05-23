@@ -1,0 +1,287 @@
+
+.tp-wrapper {
+  
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    width: 100%; /* Use full width of the container */
+    height: 90vh; /* Set the height of the container */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .tp-box {
+    text-align: center;
+    border-radius: 10px;
+   
+    position: relative;
+    width: 20rem;
+    height: 420px;
+    margin: 3rem auto;
+    
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform         : transform 1s;
+        -ms-transform         : transform 1s;
+            transform         : transform 1s;
+            font-family: "Poppins", sans-serif;   
+            transition: all 0.3s ease;     
+  
+  }
+  .tp-box__side {
+     width: 100%;
+    height: 100%;
+    position: absolute;
+  
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  
+    color: #fff;
+    text-align: center;
+    
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .tp-box__front {
+    background: white;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width and height calculations */
+    border: 4px solid #7cdacc; /* Change border color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+  }
+  
+  .tp-box__back {
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width and height calculations */
+    border: 4px solid #20e15a; /* Change border color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+   
+  }
+  
+  .submit-button {
+    border: none;
+    outline: none;
+    background: #e52c92;
+    
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px; /* Match font size with inputs */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make button full width */
+  }
+  
+  .dismiss {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: black;
+    border: 2px solid #7cdacc;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    transition: .3s ease;
+  }
+  
+  .dismiss:hover {
+    background-color: #7cdacc;
+    border: 2px solid #7cdacc;
+    color: #fff;
+  }
+  
+  
+  .user-picture {
+    overflow: hidden;
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid #7cdacc;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .user-picture svg {
+    width: 2.5rem;
+    fill: currentColor;
+    color: black;
+  }
+  
+  .name-client {
+    margin-top: 20px; /* Adjust margin as needed */
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  .card {
+    width: 20rem;
+    height: 360px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 200px;
+    border-radius: 6px 6px 0 0;
+    background-image: url('D:/coding/code/StuDar/src/assets/img/house.jpg');
+    background-size: cover; /* Ensure the image covers the entire space */
+    background-position: center;
+  }
+  
+  
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+    text-align: left;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .duration-200 {
+    transition-duration: 200ms;
+  }
+  
+  .hover\:scale-125:hover {
+    transform: scale(1.25);
+  }
+  
+  .active\:scale-100:active {
+    transform: scale(1);
+  }
+  
+  .stroke-blue-300 {
+    stroke: #3182ce; /* Change this to your desired color */
+  }
+  
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .duration-200 {
+    transition-duration: 200ms;
+  }
+  
+  .hover\:scale-125:hover {
+    transform: scale(1.25);
+  }
+  
+  .active\:scale-100:active {
+    transform: scale(1);
+  }
+  
+  .stroke-blue-300 {
+    stroke: #3182ce; /* Change this to your desired color */
+  }
+  .button-containe {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999; /* Ensure it's above other elements */
+  }
+  
+  .custom-arrow {
+    cursor: pointer;
+    fill: none;
+    stroke: #3182ce; /* Change this to your desired color */
+  }
+  
+  .custom-arrow:hover {
+    transform: scale(1.2); /* Adjust scale as needed */
+    transition: transform 0.2s ease; /* Add smooth transition */
+  }
+  .fun{
+    text-align: left; 
+  }
+  .button-contain {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.accept-button,
+.deny-button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Add space between the buttons */
+    border: none;
+    border-radius: 20px; /* Make the buttons rounded */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.accept-button:hover,
+.deny-button:hover {
+    filter: brightness(90%); /* Reduce brightness on hover for a button-like effect */
+}
+
+.accept-button {
+    background-color: #4CAF50; /* Green color for accept button */
+    color: white;
+}
+
+.deny-button {
+    background-color: #f44336; /* Red color for deny button */
+    color: white;
+}

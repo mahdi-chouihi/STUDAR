@@ -1,0 +1,70 @@
+
+.bigtext2 {
+    font-size: 28px;
+}
+.cardb{
+    padding: 20px;
+}
+.cssbuttons-io-button {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  gap: .2em;
+  font-weight: 600;
+  font-size: 16px;
+  padding: .5em 1.5em;
+  color: white;
+  background: linear-gradient(0deg, rgb(103, 177, 223),rgb(57, 142, 216));
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(84, 165, 215);
+  box-shadow: 0 .5em .5em -.4em rgb(0, 0, 0, .5);
+  letter-spacing: 0.08em;
+  border-radius: 20em;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.cssbuttons-io-button:hover {
+  filter: brightness(1.2);
+  color: rgba(0, 0, 0, 0.632);
+}
+
+.cssbuttons-io-button:active {
+  transition: 0s;
+  transform: rotate(-10deg);
+}
+label,.label{
+  color: #483939;
+font-size: 18px;
+font-weight: 600;
+}
+
+
+@media (max-width: 1140.00px) {
+    
+    .bigtext2
+    {
+        font-size: 20px;
+    }
+    
+}
+@media (min-width: 1140.00px) {
+  .cssbuttons-io-button {
+    margin-left: 0.7cm;
+  }
+  
+  
+}
+@media (max-width: 500.50px)
+{
+    
+    .bigtext2{
+      font-size: 15px;
+    }
+    .cssbuttons-io-button {
+      margin-left: -0.2cm;
+    }
+    
+  }

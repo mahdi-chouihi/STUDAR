@@ -1,0 +1,60 @@
+
+<div class="card">
+    <div class="card-body cardb" style="background: #E8E8EE;  border: 1px #544B48 solid; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 13.59px">
+        
+
+        <!-- Paragraph -->
+        <div class="mb-3">
+                <div style="width: 100%; height: 100%; text-align: center">
+                    <span style="margin-top: 0.5cm; color: black; font-weight: 500; word-wrap: break-word" class="bigtext2">You don’t have an ad right now.<br/><br/></span>
+                    <button type ="button" title="Add" class="cssbuttons-io-button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <svg height="25" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="currentColor"></path></svg>
+                        <span>Add</span>
+                      </button>
+                </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-hengader">
+          <button style="margin-left: 90%; margin-top: 4px;" class="modal-title fs-5" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div style="width: 100%; height: 100%; text-align: center; color: black; font-size: 28px; font-weight: 600; line-height: 29.91px;margin-bottom: 0.5cm ; word-wrap: break-word">Tell us about yourself</div>
+        </div>
+        <form #myForm="ngForm" (ngSubmit)="save()">
+        <div class="modal-body">
+                <mat-form-field style="width: 100%; height: 1.2cm; background: white; border-radius: 15.34px; border: 1.53px #88CFF1 solid" appearance="outline">
+                    <mat-label class="label" >Study Level</mat-label>
+                    <mat-select [(ngModel)]="studylevel" name="studylevel" required id="studyLevel">
+                        <mat-option value="1">1</mat-option>
+                        <mat-option value="2">2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field style="margin-top: 0.4cm; width: 100%; height: 1.2cm; background: white; border-radius: 15.34px; border: 1.53px #88CFF1 solid" appearance="outline">
+                  <mat-label class="label" >Facebook</mat-label>
+                  <input matInput [(ngModel)]="facebook" name="facebook">
+                </mat-form-field>
+                <mat-form-field style="margin-top: 0.4cm; width: 100%; height: 1.2cm; background: white; border-radius: 15.34px; border: 1.53px #88CFF1 solid" appearance="outline">
+                  <mat-label  class="label">Instagram</mat-label>
+                  <input matInput  [(ngModel)]="instagram" name="instagram">
+                </mat-form-field>
+                <mat-form-field style="margin-top: 0.4cm; width: 100%; height: 2cm; background: white; border-radius: 15.34px; border: 1.53px #88CFF1 solid" appearance="outline">
+                  <mat-label class="label" >Note</mat-label>
+                  <textarea matInput [(ngModel)]="note" name="note"></textarea>
+                </mat-form-field>
+                
+                
+                
+        </div>
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" >Save changes</button>
+        
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>

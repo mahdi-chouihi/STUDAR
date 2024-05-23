@@ -1,0 +1,159 @@
+.img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bigtext {
+    font-size: 24px;
+}
+.bigtext2 {
+    font-size: 28px;
+}
+.cardb{
+    padding: 20px;
+}
+
+.card-p {
+    color: #0B0B0B;
+    font-size: 18px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    gap: 1px;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+    gap: 0;
+  }
+  
+  
+  .button:hover .bin-bottom {
+    width: 50px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+  }
+  .bin-top {
+    transform-origin: bottom right;
+  }
+  .button:hover .bin-top {
+    width: 50px;
+    transition-duration: 0.3s;
+    transform: translateY(60%) rotate(160deg);
+  }
+  .button::before {
+    position: absolute;
+    top: -20px;
+    content: "Delete";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(35px);
+    transition-duration: 0.3s;
+  }
+  @media (max-width: 1140.00px) {
+    .bigtext {
+        font-size: 20px;
+    }
+    .bigtext2
+    {
+        font-size: 20px;
+    }
+    .delete {
+       
+        font-size: 10px;
+    }
+    .img{
+        width: 40px;
+    }
+    .card-p
+    {
+        font-size: 15px;
+    }
+    .profile-card-inf__txt
+    {
+      font-size: smaller;
+    }
+    .profile-card__img{
+      width: 85px;
+      height: 85px;
+    }
+    .profile-card__name {
+      font-size: 20px;
+      
+    }
+}
+@media (max-width: 710.00px) {
+    .img {
+        width: 25px;
+    }
+    
+    .profile-card__img{
+      width: 70px;
+      height: 70px;
+    }
+    .profile-card__name {
+      font-size: 18px;
+      
+    }
+}
+@media (max-width: 580.50px)
+{
+    .button:hover {
+        width: 110px;
+    }
+    
+    
+}
+@media (max-width: 500.50px)
+{
+    .button:hover {
+        width: 90px;
+    }
+    .bigtext {
+      font-size: 15px;
+    }
+    .bigtext2{
+      font-size: 15px;
+    }
+    .card-p{
+    font-size: 12px
+    }
+  }

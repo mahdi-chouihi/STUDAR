@@ -1,0 +1,131 @@
+.full-height {
+    height: 100vh;
+}
+.notifi-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 10px 5px; /* Adjusted padding */
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    border-top: none; /* Remove top border */
+}
+/* .mat-toolbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+} */
+
+.notifi-box h2 {
+    font-size: 14px;
+    padding: 15px 10px; /* Adjusted top padding */
+    border-bottom: 1px solid #eee;
+    color: #999;
+}
+
+.notifi-box h2 span {
+    color: #f00;
+}
+
+
+
+.notifi-box {
+	position: relative;
+    width: 300px;
+    height: 410px;
+    /*Adjustedheight*/opacity: 1;
+    position: absolute;
+    top: 0px;
+    /*Adjustedtopposition*/right: 20px;
+	left: 1130px;
+    transition: 1s opacity, 250ms height;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    /*Roundedcorners*/background-color: #fff;
+    /*Backgroundcolor*/border: 2px solid #00A9D4;
+    /*Blueborder*/overflow-y: auto;
+     
+    -webkit-transition: 1s opacity, 250ms height;
+    -moz-transition: 1s opacity, 250ms height;
+    -ms-transition: 1s opacity, 250ms height;
+    -o-transition: 1s opacity, 250ms height;
+}
+/* Adjust the appearance of the scrollbar */
+.notifi-box::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+.notifi-box::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the track */
+}
+
+.notifi-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Set the color of the scrollbar thumb */
+    border-radius: 4px; /* Set the border-radius of the scrollbar thumb */
+}
+
+/* Ensure the scrollbar is always visible and overlays the content */
+.notifi-box {
+    overflow-y: overlay; /* Show scrollbar overlaying content */
+}
+
+/* Hide the default scrollbar of Firefox */
+.notifi-box {
+    scrollbar-width: thin; /* Hide Firefox's scrollbar */
+}
+
+/* Adjust scrollbar appearance in Firefox */
+.notifi-box {
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Set the color of the scrollbar and track */
+}
+/* Hide the arrows on the scrollbar */
+.notifi-box::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.notifi-item:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.notifi-item img {
+    display: block;
+    width: 40px; /* Maintain the desired width */
+    height: 40px; /* Maintain the desired height */
+    min-width: 40px; /* Ensure minimum width */
+    min-height: 40px; /* Ensure minimum height */
+    margin-right: 10px;
+    border-radius: 50%; /* Increased border-radius for more rounded corners */
+    overflow: hidden; /* Ensure the image is fully rounded */
+}
+
+
+.notifi-item .text h4 {
+    color: #333; /* Darker text color */
+    font-size: 14px; /* Reduced font size */
+    margin-top: 5px; /* Adjusted top margin */
+}
+
+.notifi-item .text p {
+    color: #666; /* Lighter text color */
+    font-size: 12px; /* Reduced font size */
+}
+body {
+    background-color: #FFFFFF; /* Set the background color of the body to white */
+	height: 750px;
+	
+}
+.notifi-item .text {
+    font-family: Arial, sans-serif; /* Use Arial or a sans-serif font */
+    font-size: 14px; /* Adjust the font size */
+    color: #333; /* Set the text color */
+}
+
+.notifi-item .text h4 {
+    margin: 5px 0; /* Adjust the margin of the heading */
+}
+
+.notifi-item .text p {
+    margin: 5px 0; /* Adjust the margin of the paragraph */
+}
+

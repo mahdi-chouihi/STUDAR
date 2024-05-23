@@ -1,0 +1,14 @@
+<div class="container-fluid">
+
+  <div class="row" style="margin-top: 1cm; margin-left: 3%; margin-right: 3%;">
+    <div *ngFor="let item of items" class="col-6 col-md-4 col-lg-3"><app-house-cards [item]="item"></app-house-cards></div></div>
+
+    
+<div class="row">
+    <div class="offset-8 col-5 mt-5">
+     <a routerLink="form"> <input type="submit"  class="btn btn-info btn-lg btn-blocck rounded-pill" value="add a listing" id="button">
+     </a>
+      <br>
+    </div>
+</div>
+</div>
